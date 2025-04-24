@@ -1,7 +1,7 @@
 from openai import OpenAI
 from flask import Flask, send_from_directory, request, jsonify, Response
-from flask_cors import CORS
 import re
+from flask_cors import CORS
 
 
 app = Flask(__name__)
@@ -96,4 +96,4 @@ def obtener_riesgos( activo ):
 #riesgos, impactos = obtener_riesgos("mi telefono movil")
 
 if __name__ == '__main__':
-    app.run(debug=True, host="127.0.0.1", port="5500")
+    app.run(debug=True, host="0.0.0.0", port="5500")
